@@ -1,12 +1,14 @@
-import NewsItems from '@/components/NewsItems'
-import { DUMMY_NEWS } from '@/dummy-news'
-import React from 'react'
+import NewsItems from "@/components/NewsItems";
+import { getAllNews } from "@/lib/news";
 
-export default function page() {
+export default async function page() {
+
+  const news = await getAllNews();
+
   return (
     <>
       <h1>News Page</h1>
-      <NewsItems news={DUMMY_NEWS}/>
+      <NewsItems news={news} />
     </>
-  )
+  );
 }
