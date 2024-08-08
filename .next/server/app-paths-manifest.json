@@ -1,6 +1,8 @@
 {
-  "/page": "app/page.js",
-  "/news/page": "app/news/page.js",
-  "/news/[newsID]/image/page": "app/news/[newsID]/image/page.js",
-  "/archive/@archive/[[...filter]]/page": "app/archive/@archive/[[...filter]]/page.js"
+  "/not-found": "app/not-found.js",
+  "/(content)/news/page": "app/(content)/news/page.js",
+  "/(marketing)/page": "app/(marketing)/page.js",
+  "/(content)/news/[newsID]/page": "app/(content)/news/[newsID]/page.js",
+  "/(content)/news/[newsID]/@modal/(.)image/page": "app/(content)/news/[newsID]/@modal/(.)image/page.js",
+  "/(content)/archive/@archive/[[...filter]]/page": "app/(content)/archive/@archive/[[...filter]]/page.js"
 }
